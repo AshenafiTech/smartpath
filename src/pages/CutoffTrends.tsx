@@ -18,31 +18,43 @@ const CutoffTrends = () => {
         setCutoffData(response.data.cutoffs || []);
       } catch (error) {
         console.error('Error fetching cutoffs:', error);
-        // Mock data for demonstration
+        // CTBE Historical cutoff data
         const mockData = [
-          { year: 2020, department: 'Computer Science', cutoff: 3.8 },
-          { year: 2021, department: 'Computer Science', cutoff: 3.7 },
-          { year: 2022, department: 'Computer Science', cutoff: 3.6 },
-          { year: 2023, department: 'Computer Science', cutoff: 3.5 },
-          { year: 2024, department: 'Computer Science', cutoff: 3.6 },
+          { year: 2020, department: 'SCEE (Civil)', cutoff: 3.4 },
+          { year: 2021, department: 'SCEE (Civil)', cutoff: 3.3 },
+          { year: 2022, department: 'SCEE (Civil)', cutoff: 3.2 },
+          { year: 2023, department: 'SCEE (Civil)', cutoff: 3.1 },
+          { year: 2024, department: 'SCEE (Civil)', cutoff: 3.2 },
           
-          { year: 2020, department: 'Data Science', cutoff: 3.6 },
-          { year: 2021, department: 'Data Science', cutoff: 3.5 },
-          { year: 2022, department: 'Data Science', cutoff: 3.4 },
-          { year: 2023, department: 'Data Science', cutoff: 3.3 },
-          { year: 2024, department: 'Data Science', cutoff: 3.4 },
+          { year: 2020, department: 'SECE (Electrical)', cutoff: 3.6 },
+          { year: 2021, department: 'SECE (Electrical)', cutoff: 3.5 },
+          { year: 2022, department: 'SECE (Electrical)', cutoff: 3.4 },
+          { year: 2023, department: 'SECE (Electrical)', cutoff: 3.3 },
+          { year: 2024, department: 'SECE (Electrical)', cutoff: 3.4 },
           
-          { year: 2020, department: 'Cybersecurity', cutoff: 3.4 },
-          { year: 2021, department: 'Cybersecurity', cutoff: 3.3 },
-          { year: 2022, department: 'Cybersecurity', cutoff: 3.2 },
-          { year: 2023, department: 'Cybersecurity', cutoff: 3.1 },
-          { year: 2024, department: 'Cybersecurity', cutoff: 3.2 },
+          { year: 2020, department: 'CBME (Biomedical)', cutoff: 3.7 },
+          { year: 2021, department: 'CBME (Biomedical)', cutoff: 3.6 },
+          { year: 2022, department: 'CBME (Biomedical)', cutoff: 3.5 },
+          { year: 2023, department: 'CBME (Biomedical)', cutoff: 3.4 },
+          { year: 2024, department: 'CBME (Biomedical)', cutoff: 3.5 },
           
-          { year: 2020, department: 'Information Technology', cutoff: 3.2 },
-          { year: 2021, department: 'Information Technology', cutoff: 3.1 },
-          { year: 2022, department: 'Information Technology', cutoff: 3.0 },
-          { year: 2023, department: 'Information Technology', cutoff: 2.9 },
-          { year: 2024, department: 'Information Technology', cutoff: 3.0 },
+          { year: 2020, department: 'SiTE (Software)', cutoff: 3.5 },
+          { year: 2021, department: 'SiTE (Software)', cutoff: 3.4 },
+          { year: 2022, department: 'SiTE (Software)', cutoff: 3.3 },
+          { year: 2023, department: 'SiTE (Software)', cutoff: 3.2 },
+          { year: 2024, department: 'SiTE (Software)', cutoff: 3.3 },
+          
+          { year: 2020, department: 'SMiE (Mechanical)', cutoff: 3.3 },
+          { year: 2021, department: 'SMiE (Mechanical)', cutoff: 3.2 },
+          { year: 2022, department: 'SMiE (Mechanical)', cutoff: 3.1 },
+          { year: 2023, department: 'SMiE (Mechanical)', cutoff: 3.0 },
+          { year: 2024, department: 'SMiE (Mechanical)', cutoff: 3.1 },
+          
+          { year: 2020, department: 'SCBE (Chemical)', cutoff: 3.2 },
+          { year: 2021, department: 'SCBE (Chemical)', cutoff: 3.1 },
+          { year: 2022, department: 'SCBE (Chemical)', cutoff: 3.0 },
+          { year: 2023, department: 'SCBE (Chemical)', cutoff: 2.9 },
+          { year: 2024, department: 'SCBE (Chemical)', cutoff: 3.0 },
         ];
         setCutoffData(mockData);
         toast({

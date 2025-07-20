@@ -18,42 +18,49 @@ const Recommendations = () => {
         setDepartments(response.data.recommendations || []);
       } catch (error) {
         console.error('Error fetching recommendations:', error);
-        // Mock data for demonstration
+        // CTBE Mock data
         setDepartments([
           {
             id: '1',
-            name: 'Computer Science',
-            description: 'Focus on algorithms, programming, and software development. Perfect for students interested in AI, web development, and system design.',
+            name: 'SCEE (Civil Engineering)',
+            description: 'School of Civil and Environmental Engineering. Focus on infrastructure, construction, and environmental sustainability.',
             matchPercentage: 95,
-            cutoff: 3.6
+            cutoff: 3.2
           },
           {
             id: '2',
-            name: 'Data Science',
-            description: 'Combine mathematics, statistics, and programming to extract insights from data. Ideal for analytical minds interested in AI and business intelligence.',
+            name: 'SECE (Electrical Engineering)',
+            description: 'School of Electrical and Computer Engineering. Covers power systems, electronics, and computer hardware.',
             matchPercentage: 88,
             cutoff: 3.4
           },
           {
             id: '3',
-            name: 'Cybersecurity',
-            description: 'Protect systems and networks from digital threats. Great for students interested in ethical hacking, forensics, and security architecture.',
+            name: 'CBME (Biomedical Engineering)',
+            description: 'Center for Biomedical Engineering. Combines engineering with medical sciences for healthcare innovation.',
             matchPercentage: 82,
-            cutoff: 3.2
+            cutoff: 3.5
           },
           {
             id: '4',
-            name: 'Information Technology',
-            description: 'Broad field covering system administration, network management, and enterprise solutions. Perfect for hands-on technical roles.',
-            matchPercentage: 75,
-            cutoff: 3.0
+            name: 'SiTE (Software Engineering)',
+            description: 'School of Information Technology and Engineering. Focus on software development, programming, and IT systems.',
+            matchPercentage: 90,
+            cutoff: 3.3
           },
           {
             id: '5',
-            name: 'Software Engineering',
-            description: 'Focus on large-scale software development, project management, and software architecture. Ideal for students who enjoy collaborative development.',
+            name: 'SMiE (Mechanical Engineering)',
+            description: 'School of Mechanical and Industrial Engineering. Covers manufacturing, robotics, and industrial systems.',
+            matchPercentage: 75,
+            cutoff: 3.1
+          },
+          {
+            id: '6',
+            name: 'SCBE (Chemical Engineering)',
+            description: 'School of Chemical and Biochemical Engineering. Focus on chemical processes, materials, and biochemical systems.',
             matchPercentage: 70,
-            cutoff: 3.3
+            cutoff: 3.0
           }
         ]);
         toast({

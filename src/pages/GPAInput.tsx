@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { apiEndpoints } from '@/lib/api';
 import LoadingSpinner from '@/components/LoadingSpinner';
+import GPACalculator from '@/components/GPACalculator';
 import { Calculator, ArrowRight } from 'lucide-react';
 
 const GPAInput = () => {
@@ -57,10 +58,10 @@ const GPAInput = () => {
           <div className="text-center mb-8">
             <Calculator className="h-16 w-16 mx-auto text-primary mb-4" />
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Enter Your GPA
+              College of Technology and Built Environment (CTBE)
             </h1>
             <p className="text-muted-foreground">
-              Help us understand your academic standing to provide better recommendations
+              Enter your GPA to see your admission percentage for each CTBE department
             </p>
           </div>
 
@@ -129,9 +130,11 @@ const GPAInput = () => {
             </CardContent>
           </Card>
 
+          <GPACalculator />
+          
           <div className="text-center mt-6">
             <p className="text-sm text-muted-foreground">
-              Your GPA helps us suggest departments that match your academic performance
+              Your GPA helps determine your admission percentage based on department preferences
             </p>
           </div>
         </div>
