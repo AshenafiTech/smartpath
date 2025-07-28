@@ -1,73 +1,130 @@
-# Welcome to your Lovable project
+# SmartPath
 
-## Project info
+SmartPath is a comprehensive web platform that empowers students to make informed decisions about university and college departments and streams. By leveraging students' academic records, historical cutoff trends, and personal interests, SmartPath delivers personalized recommendations to help students choose the best academic paths for their future.
 
-**URL**: https://lovable.dev/projects/6ee4c86e-d306-489c-996e-a6f66f91374f
+---
 
-## How can I edit this code?
+## Table of Contents
 
-There are several ways of editing your application.
+- [Features](#features)
+- [Demo](#demo)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6ee4c86e-d306-489c-996e-a6f66f91374f) and start prompting.
+## Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Personalized Recommendations:** Suggests departments and streams based on GPA, cutoff trends, and interests.
+- **Cutoff Trend Visualization:** Interactive charts to explore historical cutoff data.
+- **User Dashboard:** Simple interface for students to manage their profiles and preferences.
+- **Admin Panel:** Tools for managing academic data and trends.
+- **Secure Authentication:** User registration and login.
+- **Responsive Design:** Works seamlessly on desktop and mobile devices.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Demo
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+A live demo will be available soon.  
+*Screenshots and demo videos will be added here.*
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Getting Started
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Prerequisites
 
-# Step 3: Install the necessary dependencies.
-npm i
+- [Node.js](https://nodejs.org/) (v14+)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Python](https://www.python.org/) (if backend uses Django/Flask)
+- [Docker](https://www.docker.com/) (optional, for containerization)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/smartpath.git
+   cd smartpath
+   ```
+
+2. **Install dependencies**
+   - Frontend:
+     ```bash
+     cd frontend
+     npm install
+     ```
+   - Backend:
+     ```bash
+     cd ../backend
+     pip install -r requirements.txt
+     ```
+
+3. **Set up environment variables**
+   - Copy `.env.example` to `.env` in both frontend and backend directories and update the values as needed.
+
+4. **Run the application**
+   - Backend:
+     ```bash
+     cd backend
+     python manage.py runserver
+     ```
+   - Frontend:
+     ```bash
+     cd ../frontend
+     npm start
+     ```
+
+---
+
+## Project Structure
+
+```
+smartpath/
+├── backend/         # Backend API and logic
+├── frontend/        # Frontend React/Vue/Angular app
+├── docs/            # Documentation and resources
+├── tests/           # Automated tests
+├── .env.example     # Example environment variables
+└── README.md
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Usage
 
-**Use GitHub Codespaces**
+1. Register as a student and log in.
+2. Enter your GPA and select your interests.
+3. View personalized recommendations for departments and streams.
+4. Explore cutoff trends and make informed decisions.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## Contributing
 
-This project is built with:
+Contributions are welcome!  
+Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a pull request
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/6ee4c86e-d306-489c-996e-a6f66f91374f) and click on Share -> Publish.
+## License
 
-## Can I connect a custom domain to my Lovable project?
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Contact
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+For questions, suggestions, or support, please contact [your-email@example.com].
+
+---
